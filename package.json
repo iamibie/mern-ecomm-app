@@ -1,0 +1,29 @@
+{
+  "name": "mern-e-commerce",
+  "version": "1.0.0",
+  "description": "MERN E-commerce-App",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node mern-back-end/server",
+    "server": "nodemon mern-back-end/server --ignore client",
+    "client": "npm start --prefix mern-front-end",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node mern-back-end/seeder",
+    "data:destroy": "node mern-back-end/seeder -d"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12"
+  }
+}
