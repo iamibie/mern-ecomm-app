@@ -1,16 +1,16 @@
 {
-  "name": "mern-e-commerce",
+  "name": "react-ecommerce-app",
   "version": "1.0.0",
-  "description": "MERN E-commerce-App",
+  "description": "a fullstack MERN e-commerce application",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node mern-back-end/server",
-    "server": "nodemon mern-back-end/server --ignore client",
-    "client": "npm start --prefix mern-front-end",
+    "start": "node backend/server",
+    "server": "nodemon backend/server --ignore client",
+    "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node mern-back-end/seeder",
-    "data:destroy": "node mern-back-end/seeder -d"
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "author": "",
   "license": "MIT",
@@ -20,7 +20,8 @@
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.13.7"
+    "mongoose": "^5.13.7",
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
     "concurrently": "^6.2.1",
