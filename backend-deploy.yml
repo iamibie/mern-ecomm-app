@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mern-ecom-server
+spec:
+  selector:
+    matchLabels:
+      app: mern-ecom-server
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mern-ecom-server
+    spec:
+      containers:
+        - name: mern-ecom-server
+          image: mern-ecom-server:1.0.0
+          imagePullPolicy: Never
+          env:
+          - name: NODE_ENV 
+            value: "production"
+          - name: PORT
+            value: "5000"
+          - name: MONGO_URI
+            value: "mongodb+srv://ibie1234:ibie1234@newcluster.zscri.mongodb.net/SGIA?retryWrites=true&w=majority"
+          - name: JWT_SECRET 
+            value: "abc123"
+          - name: PAYPAL_CLIENT_ID 
+            value: "AaB2gY73ZsCVIz-vx2iDL6sNNMzzYXbiUxwoP8frO7YDCk3OkW4xc9hDc5jwlQB_3kTEmF7EKSWv47Zh"
+          ports:
+            - containerPort: 5000

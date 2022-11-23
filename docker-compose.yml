@@ -5,12 +5,14 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: docker-backend
-    container_name: backend-container
+    image: sgit-node-img
+    container_name: sgit-backend-container
     command: /usr/src/app/node_modules/.bin/nodemon server.js
     volumes:
       - ./:/usr/src/app
       - /usr/src/app/node_modules
+    ports:
+      - "5000:5000"
     env_file: ./.env
     networks:
       - app-network
@@ -19,14 +21,16 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    image: frontend-img
-    container_name: frontend-container
+    image: sgit-react-img
+    container_name: sgit-frontend-container
     command: npm start
     volumes:
       - ./frontend/:/usr/app
       - /usr/app/node_modules
     depends_on:
       - backend
+    ports:
+      - "3000:3000"
     networks:
       - app-network
     stdin_open: true
