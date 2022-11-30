@@ -37,6 +37,20 @@ services:
     tty: true
 
 
+  nginx:
+    depends_on:
+      - backend
+      - frontend
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    networks:
+      - app-network
+    ports: 
+      - 8080:80
+    restart: always
+
+
 networks:
     app-network:
         driver: bridge
