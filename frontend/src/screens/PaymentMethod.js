@@ -30,10 +30,11 @@ const PaymentScreen = ({history}) => {
     return <div className='screens'><FormContainer>
 
         <CheckoutSteps step1 step2 step3/>
-        <h1>Payment Methos</h1>
+        <h1>Payment Method
+        </h1>
         <Form onSubmit={submitHandler}>
             <Form.Group controlId='address'>
-                <Form.Label as='legend'>Select Method</Form.Label>
+                <Form.Label as='legend' style={{color:'darkgray'}}>Select Method</Form.Label>
             
             <Col>
             <Form.Check 
@@ -49,7 +50,7 @@ const PaymentScreen = ({history}) => {
             </Form.Group>
 
             
-            <Button type='submit' variant='primary'>
+            <Button style={{marginTop:"1rem"}} type='submit' variant='primary'>
                 Continue
             </Button>
         </Form>

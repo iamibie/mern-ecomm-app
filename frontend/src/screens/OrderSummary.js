@@ -82,11 +82,11 @@ const OrderDetailsScreen = ({match}) => {
     }
 
 
-return loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> : <div className='screens'>
+return loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> : <div className='screens o-d'>
 
 <h1>Order {order._id}</h1>
 <Row>
-             <Col md={8}>
+             <Col l={1} style={{marginBottom:'2rem'}}>
                  <ListGroup variant='flush'>
                      <ListGroup.Item>
                          <h2>Shipping</h2>
@@ -142,7 +142,7 @@ return loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message
                      </ListGroup.Item>
                  </ListGroup>
              </Col>
-             <Col md={4}>
+             <Col md={5}>
                  <ListGroup variant='flush'>
                      <ListGroup.Item>
                          <h2>Order Summary</h2>
@@ -185,7 +185,7 @@ return loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message
                        {loadingDeliver && <Loader/>}
                         {userInfo && userInfo.isAdmin && order.isPaid && !order.isDelivered && (
                         <ListGroup.Item>
-                            <Button type='button' className='btn btn-block' onClick={successDeliverHandler}/>
+                            <Button type='button' variant='primary' className='btn btn-block' onClick={successDeliverHandler}/>
                             Mark as delivered
                         </ListGroup.Item>)}
                      

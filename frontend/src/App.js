@@ -2,23 +2,23 @@ import React from 'react'
 import './App.css'
 import Header from './Components/Header'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Productscreen from './screens/Productscreen';
-import cartScreen from './screens/cartScreen'
-import LoginScreen from './screens/loginScreen';
-import RegisterScreen from './screens/RegisterScreen';
-import ProfileScreen from './screens/ProfileScreen';
-import ShippingScreen from './screens/ShippingScreen';
-import PaymentScreen from './screens/PaymentScreen';
-import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import Productscreen from './screens/ProductDetail';
+import cartScreen from './screens/Cart'
+import LoginScreen from './screens/Login';
+import RegisterScreen from './screens/SignUp';
+import ProfileScreen from './screens/UserProfile';
+import ShippingScreen from './screens/ShippingAddress';
+import PaymentScreen from './screens/PaymentMethod';
+import PlaceOrderScreen from './screens/PlaceOrder';
 import Navbar from './Components/Navbar';
-import orderDetailsScreen from './screens/OrderDetailsScreen';
-import UserListScreen from './screens/UserListScreen';
-import AdminUpdateUserScreen from './screens/AdminUpdateUserScreen';
-import ProductListScreen from './screens/ProductListScreen';
-import AdminUpdateProductScreen from './screens/AdminUpdateProductScreen'
-import OrderListScreen from './screens/OrderListScreen';
+import orderDetailsScreen from './screens/OrderSummary';
+import UserListScreen from './screens/Users';
+import AdminUpdateUserScreen from './screens/EditUser';
+import ProductListScreen from './screens/Products';
+import AdminUpdateProductScreen from './screens/EditProduct'
+import OrderListScreen from './screens/Orders';
 import Footer from './Components/Footer';
-import MainScreen from './screens/MainScreen';
+import MainScreen from './screens/Main';
 
 
 

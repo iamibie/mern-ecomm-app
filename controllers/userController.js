@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler'
 import generateToken from '../JWT.js'
-import User from '../dataSchema/userModel.js'
+import User from '../dataModel/userModel.js'
 
 const userLogin = asyncHandler(async (req, res) => {
     const {email, password} = req.body

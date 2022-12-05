@@ -25,7 +25,8 @@ const ShippingScreen = ({history}) => {
     }
 
 
-    return <FormContainer className='screens'>
+    return <div className='screens'>
+    <FormContainer >
 
         <CheckoutSteps step1 step2/>
         <h1>Shipping</h1>
@@ -70,11 +71,12 @@ const ShippingScreen = ({history}) => {
                  </Form.Control>
             </Form.Group>
 
-            <Button type='submit' variant='primary'>
+            <Button style={{marginTop:"1rem"}} type='submit' variant='primary'>
                 Continue
             </Button>
         </Form>
     </FormContainer>
+    </div>
 }
 
 export default ShippingScreen

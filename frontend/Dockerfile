@@ -1,5 +1,5 @@
 
-
+#this is a react.js container for the frontend of this application. 
 
 FROM node:16-alpine
 

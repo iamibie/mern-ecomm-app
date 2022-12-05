@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler'
-import Product from '../dataSchema/productModel.js'
-import Order from '../dataSchema/orderModel.js'
+import Product from '../dataModel/productModel.js'
+import Order from '../dataModel/orderModel.js'
 import mongoose from 'mongoose'
 
 

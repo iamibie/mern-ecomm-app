@@ -130,7 +130,7 @@ const PlaceOrserScreen = ({history}) => {
                                  {error && <Message variant='danger'>{error}</Message>}
                      </ListGroup.Item>
                      <ListGroup.Item>
-                        <Button type='button' className='btn-block' disabled={cart.cartItems === 0} onClick={placeOrderHandler}>Place Order</Button>
+                        <Button style={{marginTop:"1rem"}} type='button' className='btn-block' disabled={cart.cartItems === 0} onClick={placeOrderHandler} variant='primary'>Place Order</Button>
                      </ListGroup.Item>
                  </ListGroup>
              </Col>

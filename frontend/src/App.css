@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Yellowtail';
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 :root{
@@ -193,12 +193,17 @@ Link{
   text-decoration: none;
   color: white;
 }
+
 .screens{
   width: 100vw;
   height: 90vh;
   display: flex;
   flex-direction: column;
- 
-  
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.o-d{
+  height: fit-content;
 }
 

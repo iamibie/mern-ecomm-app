@@ -58,13 +58,13 @@ const LoginScreen = ({location, history}) => {
                 ></Form.Control>
             </Form.Group>
 
-            <Button type='submit' variant='primary'>LOGIN</Button>
+            <Button style={{marginTop:"1rem"}} type='submit' variant='secondary'>LOGIN</Button>
         </Form>
 
-        <Row className='py-3'>
+        <Row className='py-3' >
             <Col>
             New Customer{''}
-            <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>Sign up</Link>
+            <Link to={redirect ? `/register?redirect=${redirect}` : '/register'} style={{color:'black'}}>Sign up</Link>
             </Col>
         </Row>
 

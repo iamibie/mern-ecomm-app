@@ -3,7 +3,7 @@ import { Table,Container, Row, Col, Image, ListGroup, Card, Button, Form} from '
 import {Link, useHistory} from 'react-router-dom'
 import Rating from '../Components/Rating'
 import {useDispatch, useSelector} from 'react-redux'
-import Product from '../Components/Product'
+import Product from '../Components/ProductCard'
 import {LinkContainer} from 'react-router-bootstrap'
 import Message from '../message'
 import Loader from '../loader'
@@ -62,7 +62,7 @@ const ProductsListScreen = () => {
 
 
     return (
-        < div className='screens'>
+        < div className='screens' >
         <Row className='align-items-center'>
             <Col>
             <h1>Products</h1>
@@ -76,7 +76,7 @@ const ProductsListScreen = () => {
 
         </Row>
         {loading ? ( <Loader/> ) : error ? (<Message variant='danger'>{error}</Message>) : (
-        <Table striped bordered hover responsive className='table-sm'>
+        <Table striped bordered hover responsive className='table-sm' style={{color:'black'}}>
                     <thead>
                         <tr>
                             <th>ID</th>

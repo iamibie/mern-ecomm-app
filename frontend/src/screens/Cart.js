@@ -88,7 +88,7 @@ const checkOutHandler = () => {
                         </ListGroup.Item>
                     </ListGroup>
                     <ListGroup.Item>
-                        <Button type='button' className='btn-block' disabled={cartItems.length === 0} onClick={checkOutHandler}>
+                        <Button type='button' variant='primary' className='btn-block' disabled={cartItems.length === 0} onClick={checkOutHandler}>
                             Proceed to Checkout
                         </Button>
                     </ListGroup.Item>

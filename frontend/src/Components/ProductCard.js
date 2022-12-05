@@ -1,5 +1,5 @@
 import React from 'react'
-import Rating from '../Components/Rating'
+import Rating from './Rating'
 import {Card} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 

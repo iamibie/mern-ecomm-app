@@ -1,6 +1,6 @@
 
 import asyncHandler from 'express-async-handler'
-import Product from '../dataSchema/productModel.js'
+import Product from '../dataModel/productModel.js'
 
 const products = asyncHandler(async (req, res) => {
     const products = await Product.find({})

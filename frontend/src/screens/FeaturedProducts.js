@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { useDispatch, useSelector} from 'react-redux'
-import Product from '../Components/Product'
+import Product from '../Components/ProductCard'
 import {Row, Col} from 'react-bootstrap'
 import {listProducts}from '../actions/productActions'
 import Loader from '../loader'
